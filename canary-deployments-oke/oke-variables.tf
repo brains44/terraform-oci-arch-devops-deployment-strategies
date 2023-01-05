@@ -103,7 +103,7 @@ variable "num_pool_workers" {
   description = "The number of worker nodes in the node pool. If select Cluster Autoscaler, will assume the minimum number of nodes configured"
 }
 variable "node_pool_shape" {
-  default     = "VM.Standard.E3.Flex"
+  default     = "VM.Standard.E4.Flex"
   description = "A shape is a template that determines the number of OCPUs, amount of memory, and other resources allocated to a newly created instance for the Worker Node"
 }
 variable "node_pool_node_shape_config_ocpus" {
@@ -115,7 +115,7 @@ variable "node_pool_node_shape_config_memory_in_gbs" {
   description = "You can customize the amount of memory allocated to a flexible shape"
 }
 variable "node_pool_boot_volume_size_in_gbs" {
-  default     = "60"
+  default     = "55"
   description = "Specify a custom boot volume size (in GB)"
 }
 variable "image_operating_system" {

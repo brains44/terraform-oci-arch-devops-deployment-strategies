@@ -36,6 +36,7 @@ resource "random_string" "deploy_id" {
 }
 
 # Gets a list of supported images based on the shape, operating_system and operating_system_version provided
+# Modified by Brian uncommented operation_system and operation_system_version
 data "oci_core_images" "node_pool_images" {
   compartment_id           = local.oke_compartment_id
   operating_system         = var.image_operating_system
